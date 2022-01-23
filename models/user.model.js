@@ -85,4 +85,4 @@ userSchema.methods.getForgotPasswordToken = function () {
 
 
 // 'user' is changed to lowercase user and plural in the mongoDB document
-module.exports = mongoose.model('user', userSchema)
+module.exports = mongoose.model('User', userSchema)

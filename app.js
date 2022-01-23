@@ -32,8 +32,10 @@ app.use(morgan('dev'))
 
 //importing all routes
 const userRoute = require('./routes/user.route')
+const productRoute = require('./routes/product.route')
 
 
 app.use('/api/v1', userRoute)
+app.use('/api/v1', productRoute)
 
 module.exports = app
