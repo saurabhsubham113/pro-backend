@@ -33,9 +33,12 @@ app.use(morgan('dev'))
 //importing all routes
 const userRoute = require('./routes/user.route')
 const productRoute = require('./routes/product.route')
-
+const orderRoute = require('./routes/order.route')
+const paymentRoute = require('./routes/payment.route')
 
 app.use('/api/v1', userRoute)
 app.use('/api/v1', productRoute)
+app.use('/api/v1', orderRoute)
+app.use('/api/v1', paymentRoute)
 
 module.exports = app
